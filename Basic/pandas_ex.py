@@ -59,39 +59,55 @@ df = pd.read_csv("employees.csv")
 
 #print(df[(df["Salary"]>70000) & (df["Department"]=="IT")]) # apply multiple conditions to filter data
 
-
+# Load the CSV file with null values
 dff = pd.read_csv("employees_null.csv")
 #print(dff)  
 
+# missed value displays with "True"
 #print(dff.isnull()) 
 
+# missed value displays with "False"
 #print(dff.isnotnull())
 
-#print(dff.isnull().sum()) # count of null values in each column
+# count of null values in each column
+#print(dff.isnull().sum()) 
 
-#null_pct=print(dff.isnull().sum()/len(dff)*100) # percentage of null values in each column
-#print(null_pct)# percentage of null values in each 
+# percentage of null values in each column
+# percentage of null values in each 
+#null_pct=print(dff.isnull().sum()/len(dff)*100) 
+#print(null_pct)
 
+# fill null values with 0
+#print(dff.fillna(0)) 
 
-#print(dff.fillna(0))
+# fill null values with mean of age column
+#print(dff.fillna(dff["age"].mean())) 
 
-#print(dff.fillna(dff["age"].mean()))
-#print(dff.fillna(dff["salary"].mean()))
+# fill null values with mean of salary column
+#print(dff.fillna(dff["salary"].mean())) 
 
 #print(dff)
-#print(dff.ffill())
-#print(dff.ffill())
+# forward fill - fill null values with previous non-null value
+#print(dff.ffill()) 
 
-#dff[["age","salary"]]=dff[["age","salary"]].interpolate()
+# backward fill - fill null values with next non-null value
+#print(dff.bfill()) 
+
+# fill null values with linear interpolation
+#dff[["age","salary"]]=dff[["age","salary"]].interpolate() 
 #print(dff)
 
-#print(dff.dropna())
+# drop rows with any null values
+#print(dff.dropna()) 
 
-#print(dff.dropna(how="all"))
+# drop rows where all values are null
+#print(dff.dropna(how="all")) 
 
-#print(dff.dropna(subset=["age"]))
+# drop rows where age is null
+#print(dff.dropna(subset=["age"])) 
 
-#print(dff.dropna(thresh=2))
+# drop rows with at least 2 non-null values
+#print(dff.dropna(thresh=2)) 
 
 
 
