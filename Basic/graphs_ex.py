@@ -89,6 +89,48 @@ import pandas as pd
 # plt.grid(True)
 # plt.show()
 
+#Histo Graph
+# marks = [35,40,42,45,50,55,58,60,62,65,68,70,72,75,78,80,82,85,88,90,92,95]
+# plt.figure(figsize=(10,6))
+
+# #bins = 5
+# # 95 - 35 = 60/5 = 12
+# # 35 - 47 (Bin1) 4
+# # 47 - 59 (Bin2) 3
+# # 59 - 71 (Bin3) 5
+# # 71 - 83 (Bin4) 5
+# # 83 - 95 (Bin5) 5
+
+# plt.hist(marks,bins=5,color='lightblue',edgecolor='black',alpha=0.5)
+# plt.title("Marks Distribution",fontsize=16)
+# plt.xlabel("Marks",fontsize=12)
+# plt.ylabel("Students",fontsize=12)
+# plt.grid(True)
+# plt.show()
+
+# Multiple Graphs in One Dashboard
+# subjects = ["Math", "Science", "English", "History"]
+# marks = [85, 90, 78, 92]
+# attendance = [90, 95, 85, 92]
+# plt.figure(figsize=(10,6))
+# plt.subplot(2,2,1)
+# plt.plot(subjects,marks,'ro--')
+# plt.title("Marks")
+
+# plt.subplot(2,2,2)
+# plt.bar(subjects,marks,color='skyblue')
+# plt.title("Bar Grapph")
+
+# plt.subplot(2,2,3)
+# plt.pie(marks,labels=subjects,autopct='%1.1f%%')
+# plt.title("Pie Chart")
+
+# plt.subplot(2,2,4)
+# plt.hist(marks,bins=2,color='lightgreen',edgecolor='black',alpha=0.7)
+# plt.title("Histograph")
+
+
+# plt.show()
 
 
 
