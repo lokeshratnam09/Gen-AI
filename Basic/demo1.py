@@ -1,3 +1,10 @@
+# tuples
+# collection of "ordered" and "heterogeneous" elements called tuple
+# tuples are immutable
+# ()
+# characteristics : 1) ordered 2) immutable 3) allows duplicated 4) hetrogenous elements 
+  #5)faster 6) indexed
+
 # t1 = (1,2,3)
 # print(t1)
 
@@ -28,6 +35,10 @@
 # e1,*e2 = t5
 # print(e2)
 # print(e1)
+
+# t6 = (100,200,300)
+# t6[0]=1000
+# print(t6)
 
 # t7 =  ("ML","DL","AI")
 # for element in t7:
@@ -65,4 +76,42 @@
 # print(max(t1))
 # print(len(t1))
 # print(sum(t1))
+
+# t1 = (10,20,30)
+# list() - converts tuple to list
+# l1 = list(t1)
+# l1[0] = 1000
+# tuple() - converts list to tuple
+# t2 = tuple(l1)
+# print(t2)
+
+# t1 = ([1,2],[3,4])
+# t1[0].append(3)
+# print(t1)
+
+
+# import sys
+# list1 = [10,20,30]
+# tupple1 = (10,20,30)
+# print(sys.getsizeof(list1))
+# print(sys.getsizeof(tupple1))
+
+
+# def calc(num1, num2):
+#     return num1+num2, num1-num2, num1*num2, num1/num2
+# result = calc(200,100)
+# add, sub, mul, div = result
+# print("Addition:", add)
+# print("Subtraction:", sub)
+# print("Multiplication:", mul)
+# print("Division:", div)
+
+# students = (
+#     (101,"std1","java"),
+#     (102,"std2","python"),
+#     (103,"std3","c++")
+# )
+# for sid,sname,sub in students:
+#     print(f"{sid} | {sname} | {sub}")
+
 
