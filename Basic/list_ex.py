@@ -59,3 +59,25 @@
 # list1 = [1,2,3,4,5]
 # print(len(list1))
 # print(max(list1))
+# print(min(list1))
+# print(sum(list1))
+
+# list1 = [10,20,30,40,50]
+# print(list1*2)
+
+# list1 = [[]]*3
+# list1[0].append(10)
+# print(list1)
+
+# list1 = [1,2,3,4,5]
+# print(id(list1))
+
+# list1 = [10,20,30,40,50]
+# print(30 in list1)
+# print (20 not in list1)
+
+# list1 = [1,1,2,3]
+# freq={}
+# for i in list1:
+#     freq[i] = freq.get(i,0)+1
+# print(freq)
