@@ -1,3 +1,8 @@
+# collection of variables and functions called as class
+# "class" is the keyword , used to declare the class
+# __init__, used to declare the constructor
+# constructor , used to initialize the instance variables
+# instance members are available in seperate copies for each object
 #inheritance
 #getting the data from parent class to child class is called inheritance
 
