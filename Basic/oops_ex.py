@@ -213,4 +213,98 @@
 
 # obj1 = parent()
 # obj1.db_conn()
+
+
+# class Test:
+#     cmp = "TCS .."
+#     def __init__(self):
+#         pass
+
+# class level variable
+# obj1 = Test()
+# obj2 = Test()
+# print(obj1.cmp)
+# print(obj2.cmp)
+# print(Test.cmp)
+
+# Test.cmp = "Infosys .."
+# print(Test.cmp)
+
+
+# class Test:
+#     name = "Hello"
+
+
+#     @classmethod
+#     def change_name(cls):
+#         cls.name = "Welcome ..."
+
+#print(Test.name)
+# Test.change_name()
+# print(Test.name) 
+
+# class Bank:
+#     def __init__(self,balance):
+#         self.__balance=balance
+#         print(self.__balance) 
+#     def deposit(self,amount):
+#         self.__balance += amount
+#         print(self.__balance) 
+#     def withdraw(self,amount):
+#         self.__balance -= amount
+#         print(self.__balance)   
+
+
+# bank = Bank(1000)
+# bank.deposit(500)
+# bank.withdraw(200)   
+
+# from abc import ABC, abstractmethod
+# class Test1(ABC):
+#     @abstractmethod
+#     def test(self):
+#         pass
+# class Test2(Test1):
+#     def test(self):
+#         print("Hello ...")  
+
+# obj = Test2()
+# obj.test() 
+
+
+# class Demo:
+#     def __str__(self):
+#         return "Dunder Methods !!"
+
+# obj = Demo()
+# print(obj)   
+
+
+# add= lambda num1 , num2 : num1 + num2
+# print(add(100,200))
+
+# bigger = lambda num1,num2: num1 if num1>num2 else num2
+# print(bigger(200,100))
+
+# res = lambda num1: "even" if num1%2==0 else "odd"
+# print(res(10))
+# print(res(9))
+
+# res = list(map(lambda num1: num1*num1, [10,20,30,40,50]))
+# print(res)
+
+# nums = [1,2,3,4,5]
+# print(list(filter(lambda num1: num1%2==0,nums)))
+
+# nums = [1,2,3,4,5]
+# from functools import reduce
+# print(reduce(lambda num1,num2: num1+num2,nums))
+
+
+
+
+
+
+
+
                                 
